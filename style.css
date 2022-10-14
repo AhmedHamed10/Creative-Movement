@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: linear-gradient(#200016, #10001f);
+    height: 100vh;
+    font-family: system-ui;
+}
+header{
+    width: 95%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+header .logo{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #fff;
+    margin-left: 30px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+header ul a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    margin-right: 45px;
+    border-radius: 20px;
+    transition: 0.4s ease;
+    padding: 6px 14px;
+}
+header ul a:hover, .active{
+    background-color: #fff;
+    color: #200016;
+    
+}
+.main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+} 
+.main::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to top,#200016,transparent);
+}
+.main img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+#moon{
+    mix-blend-mode: screen;
+    width: 95%;
+    transform: translateY(80px);
+}
+.ahmed{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 25px;
+    transform: translateY(-140px);
+}
+.content{
+    color: #fff;
+    padding: 30px;
+}
+.content h2{
+    margin: 20px;
+    font-size: 30px;
+}
+.content p{
+    margin: 20px;
+    opacity: 75%;
+}
+
+
+@media (max-width: 850px){
+    header ul{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
